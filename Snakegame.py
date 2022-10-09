@@ -12,8 +12,6 @@ pygame.display.update()
 ball_x = 40
 vel_x = 0
 ball_y = 50
-#leng = 10
-#h_leng = 10
 food_leng = 20
 vel_y = 0
 food_x=random.randint(0,width-10)
@@ -54,9 +52,7 @@ while True:
             if event.key == pygame.K_DOWN:
                 vel_y = 5
                 vel_x = 0
-            # if event.key == pygame.K_e:
-            #     score +=50
-                # print(score)
+
     ball_x += vel_x
     ball_y += vel_y
 
@@ -68,7 +64,7 @@ while True:
         fps+=5
         print(score)
     window.fill(white)
-    #pygame.draw.rect(window,red,[ball_x,ball_y,leng,h_leng])
+ 
     pygame.draw.rect(window,red,[food_x,food_y,food_leng,food_leng])
 
     head = []
